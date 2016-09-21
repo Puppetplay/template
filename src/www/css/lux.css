@@ -1,0 +1,442 @@
+
+/* sp_lux */
+.sp_lux{display:inline-block;overflow:hidden;background:url(/imgs/common/sp_lux.png) 0 0 no-repeat;line-height:100em;vertical-align:top}
+
+/* LUX_basic_btn */
+.LUX_basic_btn{display:inline-block;position:relative;font-weight:200;text-align:center;vertical-align:top;box-sizing:border-box;cursor:pointer;outline:none}
+a.LUX_basic_btn{text-decoration:none}
+.LUX_basic_btn.basic{border:1px solid #d3d3d3;background:#fff;color:#4a4a4a}
+.LUX_basic_btn.hover{border:1px solid #8c8c8c;background:#fff;color:#4a4a4a}
+.LUX_basic_btn.basic2{border:1px solid #1c90fb;background:#1c90fb;color:#fff}
+.LUX_basic_btn.hover2{border:1px solid #006dd2;background:#006dd2;color:#fff}
+.LUX_basic_btn.hover2_v{border:1px solid #0d5598;background:#0d5598;color:#fff}
+.LUX_basic_btn.basic3{border:1px solid #b5b5b5;background:transparent;color:#dedede}
+.LUX_basic_btn.hover3{border:1px solid #3b4455;background:#3b4455;color:#dedede}
+.LUX_basic_btn.disable{border:1px solid #e0e0e0;background:#f2f2f2;color:#8d8d8d}
+button.LUX_basic_btn.Confirm{width:auto;height:37px;padding:1px 20px 0;font-size:16px}
+a.LUX_basic_btn.Confirm{width:auto;height:37px;padding:0 20px;font-size:16px;line-height:37px}
+button.LUX_basic_btn.Default{width:auto;height:27px;padding:1px 10px 0;font-size:12px}
+a.LUX_basic_btn.Default{width:auto;height:27px;padding:0 10px;font-size:12px;line-height:27px}
+button.LUX_basic_btn.Small{width:auto;height:20px;padding:1px 8px 0;font-size:11px}
+a.LUX_basic_btn.Small{width:auto;height:20px;padding:0 8px;font-size:11px;line-height:20px}
+button.LUX_basic_btn.Image{width:27px;height:27px;padding:0}
+a.LUX_basic_btn.Image{width:27px;height:27px;padding:0;line-height:27px}
+
+/* LUX_basic_page */
+.LUX_basic_page{text-align:center}
+.LUX_basic_page .pagein{display:inline-block}
+.LUX_basic_page .pagein{font-size:13px;vertical-align:top}
+.LUX_basic_page .pagein:after{display:block;clear:both;content:''}
+.LUX_basic_page .btn{display:inline-block;float:left;position:relative;width:21px;height:21px;border:0 none;background:transparent;font-weight:200;text-align:center;vertical-align:top;box-sizing:border-box;cursor:pointer;outline:none}
+.LUX_basic_page .btn .sp_lux{width:21px;height:21px}
+.LUX_basic_page .btn_prev{margin:0 8px 0 3px}
+.LUX_basic_page .btn_next{margin:0 3px 0 8px}
+.LUX_basic_page span.btn_prev .sp_lux{background-position:0 -100px}
+.LUX_basic_page span.btn_next .sp_lux{background-position:-25px -100px}
+.LUX_basic_page button.btn_prev .sp_lux{background-position:0 -125px}
+.LUX_basic_page button.btn_next .sp_lux{background-position:-25px -125px}
+.LUX_basic_page .num{display:inline-block;float:left;min-width:15px;height:21px;padding:0 3px;line-height:22px;font-weight:200;color:#4a4a4a;text-align:center;text-decoration:none}
+.LUX_basic_page strong.num{color:#1c90fb}
+.LUX_basic_page .num.on,.num:hover,strong.num:hover{background:#1c90fb;color:#fff}
+
+/* LUX_basic_select */
+.LUX_basic_select{position:relative}
+.LUX_basic_select .searchbx{position:relative}
+.LUX_basic_select .searchbx .inpbx{display:block;height:19px;padding:6px 24px 0 6px;border:1px solid #dbdbdb;background:#fff;line-height:19px}
+.LUX_basic_select .searchbx .inpbx input{display:block;width:100%;border:0;background:transparent;font-size:12px;color:#000;outline:none}
+.LUX_basic_select .searchbx .btn{position:absolute;top:0;right:0;width:27px;height:27px;border:0 none;background:transparent;cursor:pointer}
+.LUX_basic_select .searchbx .btn .sp_lux{width:8px;height:4px;margin-top:5px;background-position:-50px -50px}
+.LUX_basic_select .searchbx .placeholder{position:absolute;top:0;left:0;padding:4px 24px 0 6px;font-size:12px;line-height:20px;color:#8d8d8d}
+.LUX_basic_select .searchbx .inpbx:hover .placeholder{display:none}
+.LUX_basic_select .resultbx{display:none;position:absolute;top:100%;left:0;z-index:20;width:100%;background:#fff}
+.LUX_basic_select:hover .searchbx .sp_lux{background-position:-75px -50px}
+.LUX_basic_select:hover .inpbx{border-color:#58adfc}
+.LUX_basic_select:hover .resultbx{display:block}
+.LUX_basic_select .result_scrall{overflow:auto;border:1px solid #a3a3a3;background:#fff;box-shadow:1px 1px 1px #ececec}
+.LUX_basic_select .result_lst a{display:block;padding:2px 6px 0;font-size:12px;line-height:20px;color:#4a4a4a;text-decoration:none}
+.LUX_basic_select .result_lst a:hover{background:#f5f5f5}
+.LUX_basic_select .result_lst a span{color:#1c90fb}
+
+/* LUX_basic_submit */
+.LUX_basic_submit{position:relative}
+.LUX_basic_submit .searchbx{position:relative}
+.LUX_basic_submit .searchbx .inpbx{display:block;height:19px;padding:6px 24px 0 6px;border:1px solid #dbdbdb;background:#fff;line-height:19px}
+.LUX_basic_submit .searchbx .inpbx input{display:block;width:100%;border:0;background:transparent;font-size:12px;color:#000;outline:none}
+.LUX_basic_submit .searchbx .btn{position:absolute;top:0;right:0;width:27px;height:27px;border:0 none;background:transparent;cursor:pointer}
+.LUX_basic_submit .searchbx .btn .sp_lux{width:16px;height:14px;background-position:-100px 0}
+.LUX_basic_submit .searchbx .placeholder{position:absolute;top:0;left:0;padding:4px 24px 0 6px;font-size:12px;line-height:20px;color:#8d8d8d}
+.LUX_basic_submit .searchbx .inpbx:hover .placeholder{display:none}
+.LUX_basic_submit .resultbx{display:none;position:absolute;top:100%;left:0;z-index:20;width:100%;background:#fff}
+.LUX_basic_submit:hover .searchbx .sp_lux{background-position:-125px 0}
+.LUX_basic_submit:hover .inpbx{border-color:#58adfc}
+.LUX_basic_submit:hover .resultbx{display:block}
+.LUX_basic_submit .result_scrall{overflow:auto;border:1px solid #a3a3a3;background:#fff;box-shadow:1px 1px 1px #ececec}
+.LUX_basic_submit .result_scrallin{zoom:1}
+.LUX_basic_submit .result_lst a{display:block;padding:2px 6px 0;font-size:12px;line-height:20px;color:#4a4a4a;text-decoration:none}
+.LUX_basic_submit .result_lst a:hover{background:#f5f5f5}
+.LUX_basic_submit .result_lst a span{color:#1c90fb}
+
+/* LUX_basic_time */
+.LUX_basic_time{position:relative}
+.LUX_basic_time .timebx{position:relative;width:99px}
+.LUX_basic_time .timebx .inpbx{display:block;height:19px;padding:6px 24px 0 29px;border:1px solid #dbdbdb;background:#fff;line-height:19px}
+.LUX_basic_time .timebx .inpbx input{display:block;width:100%;border:0;background:transparent;font-size:12px;color:#000;outline:none}
+.LUX_basic_time .timebx .LUX_basic_switch{position:absolute;top:0;left:0;width:27px;height:27px;cursor:pointer}
+.LUX_basic_time .timebx .LUX_basic_switch label{display:inline-block;padding:4px 0 0 6px;font-size:12px}
+.LUX_basic_time .timebx .btn{position:absolute;top:0;right:0;width:27px;height:27px;border:0 none;background:transparent;cursor:pointer}
+.LUX_basic_time .timebx .btn .sp_lux{width:16px;height:14px;background-position:-150px 0}
+.LUX_basic_time .resultbx{display:none;position:absolute;top:100%;left:0;z-index:10;width:100%;background:#fff}
+.LUX_basic_time:hover .inpbx{border-color:#58adfc}
+.LUX_basic_time:hover .resultbx{display:block}
+.LUX_basic_time.active .inpbx{border-color:#58adfc}
+.LUX_basic_time.active .resultbx{display:block}
+.LUX_basic_time .result_scrall{overflow:auto;border:1px solid #a3a3a3;background:#fff;box-shadow:1px 1px 2px #ececec}
+.LUX_basic_time .result_scrallin{zoom:1}
+.LUX_basic_time .result_lst a{display:block;padding:2px 6px 0;font-size:12px;line-height:20px;color:#4a4a4a;text-decoration:none}
+.LUX_basic_time .result_lst a em{display:inline-block;min-width:8px;font-style:normal;text-align:center}
+.LUX_basic_time .result_lst a:hover{background:#f5f5f5}
+.LUX_basic_time .result_lst a span{color:#1c90fb}
+
+/* LUX_basic_date */
+.LUX_basic_date{position:relative}
+.LUX_basic_date .datebx{position:relative;width:115px}
+.LUX_basic_date .datebx .inpbx{display:block;height:19px;padding:6px 24px 0 6px;border:1px solid #dbdbdb;background:#fff;line-height:19px}
+.LUX_basic_date .datebx .inpbx input{display:block;width:100%;border:0;background:transparent;font-size:12px;color:#000;outline:none}
+.LUX_basic_date .datebx .btn{position:absolute;top:0;right:0;width:27px;height:27px;border:0 none;background:transparent;cursor:pointer}
+.LUX_basic_date .datebx .btn .sp_lux{width:16px;height:14px;margin-top:1px;background-position:-175px 0}
+.LUX_basic_date.active .LUX_calendar{display:block}
+.LUX_basic_date.active .datebx .inpbx{border-color:#1c90fb}
+.LUX_basic_date:hover .LUX_calendar{display:block}
+.LUX_basic_date:hover .datebx .inpbx{border-color:#1c90fb}
+.LUX_calendar{display:none;position:absolute;z-index:99999;width:216px;border:1px solid #a3a3a3;background:#fff;box-shadow:1px 1px 1px #ececec}
+.LUX_calendar .date_select .btn{position:absolute;top:8px;width:22px;height:22px;border:1px solid transparent;background:transparent;text-align:center}
+.LUX_calendar .date_select .btn:hover{border-color:#ccc}
+.LUX_calendar .date_select .btn:hover .sp_lux{opacity:1}
+.LUX_calendar .date_select .btn .sp_lux{width:10px;height:9px;margin-top:2px;opacity:.5}
+.LUX_calendar .date_select{position:relative;height:40px;background:#fafafa;line-height:40px;text-align:center;vertical-align:top}
+.LUX_calendar .date_select .btn_prev_year{left:20px}
+.LUX_calendar .date_select .btn_prev_year .sp_lux{background-position:-50px -100px}
+.LUX_calendar .date_select .btn_prev_mon{left:45px}
+.LUX_calendar .date_select .btn_prev_mon .sp_lux{background-position:-50px -75px}
+.LUX_calendar .date_select .date_day_title{font-family:tahoma,sans-serif;font-size:14px;color:#000}
+.LUX_calendar .date_select .btn_next_mon{right:45px}
+.LUX_calendar .date_select .btn_next_mon .sp_lux{background-position:-75px -75px}
+.LUX_calendar .date_select .btn_next_year{right:20px}
+.LUX_calendar .date_select .btn_next_year .sp_lux{background-position:-75px -100px}
+.LUX_calendar .date_tbl{padding:10px}
+.LUX_calendar .date_tbl table{width:100%;border-collapse:collapse;text-align:center;table-layout:fixed;border-spacing:0}
+.LUX_calendar .date_tbl th,.LUX_calendar .date_tbl td{border-collapse:collapse;border-spacing:0}
+.LUX_calendar .date_tbl .date_week{height:20px;font-size:11px;color:#8d8d8d}
+.LUX_calendar .date_tbl .date_day button{display:block;width:28px;height:21px;border:1px solid transparent;background:transparent;font-size:12px;color:#4a4a4a;text-align:center;text-decoration:none;vertical-align:top;cursor:pointer;outline:none}
+.LUX_calendar .date_tbl .date_day button:hover{border-color:#ccc}
+.LUX_calendar .date_tbl .date_day_sun button,.LUX_calendar .date_tbl .date_day_holiday button,.LUX_calendar .date_tbl .date_day_holiday button:hover{color:#f00}
+.LUX_calendar .date_tbl .date_day_prev_mon button,.LUX_calendar .date_day_next_mon button{color:#c2c2c2}
+.LUX_calendar .date_tbl .date_day_today button{background:#f0f0f0}
+.LUX_calendar .date_tbl .date_day_selected button{background:#1c90fb;color:#fff}
+.LUX_calendar .date_tbl .date_day_selected button:hover{border-color:#0072dc}
+.LUX_calendar .date_tbl .date_day_gap button{background:#e9f5ff}
+.LUX_calendar .select_area{clear:both;padding:10px;border-top:1px solid #e6e6e6;white-space:nowrap}
+.LUX_calendar .select_area .btn{display:inline-block;position:relative;height:21px;padding:1px 6px 0;border:1px solid #e0e0e0;background:#fff;font-size:11px;font-weight:200;color:#4a4a4a;text-align:center;vertical-align:top;box-sizing:border-box;cursor:pointer;outline:none}
+.LUX_calendar .select_area .btn_group{display:inline-block}
+.LUX_calendar .select_area .btn_group .btn{margin:-1px 5px 0}
+.LUX_calendar .select_area .btn_group2{float:right}
+.LUX_calendar .select_area .btn_group2 .btn{margin:-1px 0 0 -1px}
+.LUX_calendar .select_area .solar_area{display:inline-block;font-size:12px;color:#999}
+.LUX_calendar .select_area .solar_area span{margin:0 3px 0 0}
+.LUX_basic_date_gap .date_gap{display:inline-block;float:left;margin-right:12px}
+.LUX_basic_date_gap .LUX_basic_date{float:left}
+.LUX_basic_date_gap .LUX_calendar{width:430px}
+.LUX_basic_date_gap .LUX_date_day_bx{float:left;width:50%}
+.LUX_basic_date_gap .LUX_date_day_bx:first-child:after{position:absolute;top:0;left:50%;bottom:39px;z-index:10;width:1px;background:#e6e6e6;content:''}
+
+/* LUX_basic_text */
+.LUX_basic_text .inpbx{position:relative;height:19px;padding:6px 6px 0;border:1px solid #dbdbdb;background:#fff;line-height:19px}
+.LUX_basic_text .inpbx input{display:block;width:100%;border:0 none;background:transparent;font-size:12px;color:#1a1a1a;vertical-align:top;outline:none}
+.LUX_basic_text .inpbx .sp_lux{position:absolute;top:6px;right:6px;width:16px;height:14px}
+.LUX_basic_text .inpbx .placeholder{position:absolute;top:0;left:0;padding:4px 24px 0 6px;font-size:12px;line-height:20px;color:#8d8d8d}
+.LUX_basic_text .info{margin:5px 0 0 5px;font-size:12px}
+.LUX_basic_text .sp_lux{background-position:30px 30px}
+.LUX_basic_text .on{border-color:#58adfc}
+.LUX_basic_text .on .sp_lux{background-position:-100px -75px}
+.LUX_basic_text .on .placeholder{display:none}
+.LUX_basic_text.accurate .inpbx{padding-right:24px;border-color:#8fe1bd}
+.LUX_basic_text.accurate .info{color:#8fe1bd}
+.LUX_basic_text.accurate .sp_lux{background-position:-100px -25px}
+.LUX_basic_text.error .inpbx{padding-right:24px;border-color:#fc5356}
+.LUX_basic_text.error .info{color:#fc5356}
+.LUX_basic_text.error .sp_lux{background-position:-125px -25px}
+.LUX_basic_text.warning .inpbx{padding-right:24px;border-color:#febc2c}
+.LUX_basic_text.warning .info{color:#febc2c}
+.LUX_basic_text.warning .sp_lux{background-position:-150px -25px}
+.LUX_basic_text.disabled .inpbx{padding-right:24px;border-color:#dbdbdb;background:#fafafa}
+.LUX_basic_text.disabled .inpbx input{color:#8d8d8d}
+.LUX_basic_text.disabled .sp_lux{display:none}
+.LUX_basic_text.editing .sp_lux{top:0;left:0;width:7px;height:7px;background-position:-100px -50px}
+
+/* LUX_basic_textarea */
+.LUX_basic_textarea .inpbx{position:relative}
+.LUX_basic_textarea .inpbx textarea{display:block;overflow:auto;padding:5px 6px;border:0 none;border:1px solid #dbdbdb;background:transparent;font-size:14px;line-height:20px;color:#1a1a1a;vertical-align:top;box-sizing:border-box;outline:none}
+.LUX_basic_textarea .inpbx .placeholder{position:absolute;top:0;left:0;padding:5px 6px 0;font-size:12px;line-height:20px;color:#8d8d8d}
+.LUX_basic_textarea:hover textarea{border-color:#58adfc}
+.LUX_basic_textarea.on textarea{border-color:#58adfc}
+.LUX_basic_textarea.disabled textarea{border-color:#dbdbdb;background:#fafafa}
+
+/* LUX_basic_switch */
+.LUX_basic_switch{display:inline-block;overflow:hidden;position:relative;margin-right:20px;line-height:20px;vertical-align:top;cursor:pointer}
+.LUX_basic_switch input{position:absolute;top:-100%;left:-100%;z-index:-10;width:13px;height:13px;background:transparent}
+.LUX_basic_switch .sp_lux{position:absolute;left:0;z-index:0}
+.LUX_basic_switch label{display:inline-block;position:relative;z-index:10;padding-left:20px;font-size:13px;line-height:20px;cursor:pointer}
+.LUX_basic_switch .LUXckbx .sp_lux{top:50%;width:14px;height:14px;margin-top:-7px;background-position:0 0}
+.LUX_basic_switch.switchon .LUXckbx .sp_lux{background-position:-25px 0}
+.LUX_basic_switch.disabled .LUXckbx .sp_lux{background-position:-50px 0}
+.LUX_basic_switch.disabledcked .LUXckbx .sp_lux{background-position:-75px 0}
+.LUX_basic_switch.half_disabledcked .LUXckbx .sp_lux{background-position:0 -75px}
+.LUX_basic_switch.half_switchon .LUXckbx .sp_lux{background-position:-25px -75px}
+.LUX_basic_switch .LUXrabx .sp_lux{top:50%;width:14px;height:14px;margin-top:-7px;background-position:0 -25px}
+.LUX_basic_switch.switchon .LUXrabx .sp_lux{background-position:-25px -25px}
+.LUX_basic_switch.disabled .LUXrabx .sp_lux{background-position:-50px -25px}
+.LUX_basic_switch.disabledcked .LUXrabx .sp_lux{background-position:-75px -25px}
+.LUX_basic_switch .LUXstarbx{display:inline-block;overflow:hidden;width:20px;height:20px}
+.LUX_basic_switch .LUXstarbx .sp_lux{top:50%;width:16px;height:16px;margin-top:-8px;background-position:0 -50px}
+.LUX_basic_switch.switchon .LUXstarbx .sp_lux{background-position:-25px -50px}
+.LUX_basic_switch.disabled .LUXstarbx .sp_lux{background-position:-50px -50px}
+.LUX_basic_switch .LUXonoffbx{display:inline-block;overflow:hidden;width:54px;height:23px}
+.LUX_basic_switch .LUXonoffbx label{padding-left:54px}
+.LUX_basic_switch .LUXonoffbx .sp_lux{top:0;width:54px;height:23px;background-position:-125px -50px}
+.LUX_basic_switch.switchon .LUXonoffbx .sp_lux{background-position:-125px -75px}
+.LUX_basic_switch.disabled .LUXonoffbx .sp_lux{background-position:-125px -100px}
+.LUX_basic_switch.disabledcked .LUXonoffbx .sp_lux{background-position:-125px -125px}
+
+.LUX_basic_switch input[type=checkbox] + .sp_lux{background-position:0 0}
+.LUX_basic_switch input[type=checkbox]:checked + .sp_lux{background-position:-25px 0}
+
+.LUX_basic_switch.disabled input[type=checkbox] + .sp_lux{background-position:-50px 0}
+.LUX_basic_switch.disabled input[type=checkbox]:disabled + .sp_lux{background-position:-50px 0}
+.LUX_basic_switch.disabledcked input[type=checkbox]:checked + .sp_lux{background-position:-75px 0}
+.LUX_basic_switch.half_disabledcked input[type=checkbox] + .sp_lux{background-position:0 -75px}
+.LUX_basic_switch.half_disabledcked input[type=checkbox]:checked + .sp_lux{background-position:0 -75px}
+.LUX_basic_switch.half_switchon input[type=checkbox] + .sp_lux{background-position:0 0}
+.LUX_basic_switch.half_switchon input[type=checkbox]:checked + .sp_lux{background-position:-25px -75px}
+
+.LUX_basic_switch input[type=radio] + .sp_lux{background-position:0 -25px}
+.LUX_basic_switch input[type=radio]:checked + .sp_lux{background-position:-25px -25px}
+.LUX_basic_switch.disabled input[type=radio] + .sp_lux{background-position:-50px -25px}
+.LUX_basic_switch.disabledcked input[type=radio] + .sp_lux{background-position:-75px -25px}
+
+.LUX_basic_switch .LUXstarbx input[type=checkbox] + .sp_lux{background-position:0 -50px}
+.LUX_basic_switch .LUXstarbx input[type=checkbox]:checked + .sp_lux{background-position:-25px -50px}
+.LUX_basic_switch.switchon .LUXstarbx input[type=checkbox] + .sp_lux{background-position:-25px -50px}
+
+.LUX_basic_switch .LUXonoffbx input[type=checkbox] + .sp_lux{background-position:-125px -50px}
+.LUX_basic_switch .LUXonoffbx input[type=checkbox]:checked + .sp_lux{background-position:-125px -75px}
+.LUX_basic_switch.switchon .LUXonoffbx input[type=checkbox] + .sp_lux{background-position:-125px -75px}
+.LUX_basic_switch.disabled .LUXonoffbx input[type=checkbox] + .sp_lux{background-position:-125px -100px}
+.LUX_basic_switch.disabledcked .LUXonoffbx input[type=checkbox] + .sp_lux{background-position:-125px -125px}
+
+/* LUX_basic_tbl */
+.LUX_basic_tbl table{display:table;width:100%;border:0;border-collapse:collapse;border-bottom:1px solid #e0e0e0;table-layout:fixed;border-spacing:0}
+.LUX_basic_tbl thead th{padding:9px 0;border-top:2px solid #333;background:#f7f7f7;font-size:14px;color:#000}
+.LUX_basic_tbl td{padding:9px 0;border-top:1px solid #f0f0f0;font-size:14px;font-weight:200;color:#666}
+.LUX_basic_tbl tr:first-child td{border-top:1px solid #e1e1e1}
+.LUX_basic_tbl th:first-child .inbx,.LUX_basic_tbl tr:first-child td:first-child .inbx{border-left:0 none}
+.LUX_basic_tbl .cellft{text-align:left}
+.LUX_basic_tbl .celcnt{text-align:center}
+.LUX_basic_tbl .celrgt{text-align:right}
+.LUX_basic_tbl .active td{background:#f2f9ff}
+.LUX_basic_tbl .disabled td{color:#ccc}
+.LUX_basic_tbl .tbl_tit{position:relative;margin:0 0 5px}
+.LUX_basic_tbl .tbl_tit h2{font-weight:400;font-size:18px;color:#000}
+.LUX_basic_tbl .tbl_tit p{font-weight:200;font-size:18px;color:#000}
+.LUX_basic_tbl .tbl_tit .tblinfo{position:absolute;top:7px;right:0;font-size:13px}
+.LUX_basic_tbl .tbl_tit .tblinfo .sp_must{width:7px;height:7px;margin:3px 3px 0 0;background-position:-25px -150px}
+.LUX_basic_tbl .tbl_tit .btnbx{position:absolute;top:-3px;right:0}
+.LUX_basic_tbl .tbl_tit .btnbx .btn{display:inline-block}
+.LUX_basic_tbl .tblarea .inbx{padding:0 3px}
+.LUX_basic_tbl .tblarea .LUX_basic_switch{width:14px;height:16px;margin:0}
+.LUX_basic_tbl .tblarea td{border-left:1px solid #f0f0f0}
+.LUX_basic_tbl .tblarea tr td:first-child{border-left:0 none}
+.LUX_basic_tbl .tblarea2{border-top:2px solid #000}
+.LUX_basic_tbl .tblarea2 th{padding:9px 0;border:1px solid #e0e0e0;border-width:1px 1px 0 0;background:#f4f4f4;font-weight:200}
+.LUX_basic_tbl .tblarea2 th .inbx{position:relative;margin:0 0 0 30px;font-size:14px;color:#000}
+.LUX_basic_tbl .tblarea2 th .sp_lux{position:absolute;top:4px;left:-10px;width:7px;height:7px;background-position:-25px -150px}
+.LUX_basic_tbl .tblarea2 th .inbx p{font-size:12px;color:#fc5356}
+.LUX_basic_tbl .tblarea2 td .inbx{padding:0 16px}
+.LUX_basic_tbl .tbl_scrall{overflow:hidden;overflow:auto;max-height:490px;border-bottom:1px solid #e0e0e0}
+.LUX_basic_tbl .tbl_scrall_in{zoom:1}
+.LUX_basic_tbl .tbl_scrall table{border-bottom:0 none}
+.LUX_basic_tbl .tbl_scrall tr:first-child td{border-top:0 none}
+
+/* LUX_basic_tabs */
+.LUX_basic_tabs{text-align:center}
+.LUX_basic_tabs .tabsin{display:inline-block;vertical-align:top}
+.LUX_basic_tabs .tabs_lst{font-size:13px;vertical-align:top;zoom:1}
+.LUX_basic_tabs .tabs_lst:after{display:block;clear:both;content:''}
+.LUX_basic_tabs .tabs_lst > li{display:inline-block;float:left}
+.LUX_basic_tabs .tabs_lst a{display:inline-block;overflow:hidden;float:left;height:40px;text-align:center;text-decoration:none;vertical-align:top}
+.LUX_basic_tabs .tabs_lst a > span{display:block;width:100%;height:100%}
+.LUX_basic_tabs .tabs_lst .active a{position:relative;z-index:10}
+.LUX_basic_tabs .tabs_lst li:hover a{position:relative;z-index:10}
+.LUX_basic_tabs .tabs_lst .num{color:#1c90fb}
+.LUX_basic_tabs .tabs_lst button{display:inline-block;overflow:hidden;float:left;height:40px;border:0 none;background:transparent;text-align:center;text-decoration:none;vertical-align:top;outline:none;cursor:pointer}
+.LUX_basic_tabs .tabs_lst button > span{display:block;width:100%;height:100%}
+.LUX_basic_tabs .tabs_lst .active button{position:relative;z-index:10}
+.LUX_basic_tabs .tabs_lst li:hover button{position:relative;z-index:10}
+
+.bgfull{background:#3d94ee;text-align:right}
+.bgfull .tabs_lst a{padding:0 30px;font-weight:200;font-size:17px;line-height:40px;color:#cbe5ff}
+.bgfull .tabs_lst .active a{background:#1078e4;color:#fff}
+.bgfull .tabs_lst li:hover a{background:#1078e4;color:#fff}
+.bgfull .tabs_lst button{padding:0 30px;font-weight:200;font-size:17px;line-height:40px;color:#cbe5ff}
+.bgfull .tabs_lst .active button{background:#1078e4;color:#fff}
+.bgfull .tabs_lst li:hover button{background:#1078e4;color:#fff}
+
+.bdline_cnt{border-top:1px solid #e5e5e5;border-bottom:1px solid #9e9e9e}
+.bdline_cnt .tabs_lst a{position:relative;bottom:-1px;padding:0 30px;border-bottom:3px solid transparent;font-size:17px;line-height:45px;color:#535353}
+.bdline_cnt .tabs_lst a:after{position:absolute;top:13px;left:0;bottom:13px;width:1px;background:#e5e5e5;content:''}
+.bdline_cnt .tabs_lst li:first-child a:after{display:none}
+.bdline_cnt .tabs_lst li:hover a{border-color:#00a2ff;color:#2e2e2e}
+.bdline_cnt .tabs_lst .active a{border-color:#00a2ff;color:#2e2e2e}
+.bdline_cnt .tabs_lst button{position:relative;bottom:-1px;padding:0 30px;border-bottom:3px solid transparent;font-size:17px;line-height:35px;color:#535353}
+.bdline_cnt .tabs_lst button:after{position:absolute;top:10px;left:0;bottom:10px;width:1px;background:#e5e5e5;content:''}
+.bdline_cnt .tabs_lst li:first-child button:after{display:none}
+.bdline_cnt .tabs_lst li:hover button{border-color:#00a2ff;color:#2e2e2e}
+.bdline_cnt .tabs_lst .active button{border-color:#00a2ff;color:#2e2e2e}
+
+.bdline_full{border-top:1px solid #e5e5e5;border-bottom:1px solid #9e9e9e;text-align:center}
+.bdline_full .tabsin{display:block}
+.bdline_full .tabs_lst li{width:25%}
+.bdline_full .tabs_lst a{display:block;position:relative;bottom:-1px;width:100%;padding:0;border-bottom:3px solid transparent;font-size:17px;line-height:45px;color:#535353}
+.bdline_full .tabs_lst a:after{position:absolute;top:13px;left:0;bottom:13px;width:1px;background:#e5e5e5;content:''}
+.bdline_full .tabs_lst li:first-child a:after{display:none}
+.bdline_full .tabs_lst li:hover a{border-color:#00a2ff;color:#2e2e2e}
+.bdline_full .tabs_lst .active a{border-color:#00a2ff;color:#2e2e2e}
+.bdline_full .tabs_lst button{display:block;position:relative;bottom:-1px;width:100%;padding:0;border-bottom:3px solid transparent;font-size:17px;line-height:35px;color:#535353}
+.bdline_full .tabs_lst button:after{position:absolute;top:10px;left:0;bottom:10px;width:1px;background:#e5e5e5;content:''}
+.bdline_full .tabs_lst li:first-child button:after{display:none}
+.bdline_full .tabs_lst li:hover button{border-color:#00a2ff;color:#2e2e2e}
+.bdline_full .tabs_lst .active button{border-color:#00a2ff;color:#2e2e2e}
+
+.shadow .tabs_lst .active a{box-shadow:2px -2px 7px rgba(0,0,0,.3)}
+
+/* clear */
+.clrbx{clear:both;height:0}
+.clrbx:after,.cw .clrulbx > li:after{display:block;clear:both;content:''}
+.fltlft{display:inline-block;float:left}
+.fltrgt{display:inline-block;float:right}
+
+/* ct layout */
+.LUXct_center{text-align:left}
+.LUXct_center .LUXct_in{display:inline-block}
+.LUXct_center .LUXct_in:after{display:block;clear:both;content:''}
+
+.LUXmenu_lft{display:inline-block;float:left}
+.LUXmenu_lft > div{display:inline-block;float:left;margin:5px;padding:5px;border:1px solid #ccc}
+.LUXmenu_rgt{display:inline-block;float:right}
+.LUXmenu_rgt > div{display:inline-block;float:left;margin:5px;padding:5px;border:1px solid #ccc}
+
+/* LUX_basic_dialog */
+.LUX_basic_dialog{position:fixed;top:0;right:0;left:0;bottom:0;z-index:1000}
+.LUX_basic_dialog .dimmed{overflow:hidden;position:fixed;top:0;right:0;left:0;bottom:0;z-index:1100;background:#000;opacity:.6;filter:alpha(opacity=60)}
+.LUX_basic_dialog .dialog_wrap_tbl{display:table;position:absolute;top:50%;left:50%;z-index:1200;width:800px;height:600px;margin:-300px 0 0 -400px;vertical-align:middle}
+.LUX_basic_dialog .dialog_wrap_tblcel{display:table-cell;text-align:center;vertical-align:middle}
+.LUX_basic_dialog .dialog_wrap{display:inline-block;min-width:280px;padding:20px 30px;background:#fff}
+.LUX_basic_dialog .dialog_btnbx{margin-top:20px;text-align:center}
+.LUX_basic_dialog .dialog_btnbx:after{display:block;clear:both;content:''}
+.LUX_basic_dialog .dialog_bx{margin-top:16px;padding:10px;border:1px solid #ccc;font-size:14px;text-align:left}
+.LUX_basic_dialog .dialog_alert{text-align:center}
+.LUX_basic_dialog .dialog_alert .sp_dialog{width:38px;height:38px;margin-bottom:9px;background-position:0 -175px}
+.LUX_basic_dialog .dialog_alert h1{padding:0 0 10px;font-size:22px;line-height:26px;font-weight:normal}
+.LUX_basic_dialog .dialog_alert .dialog_dsc{padding-top:7px;font-size:16px;line-height:20px}
+
+.dialog_data{text-align:left}
+.dialog_data .dialog_data_tit h1{padding:0 0 10px;font-size:22px;line-height:26px;font-weight:normal}
+.dialog_data .dialog_data_area{overflow:auto;max-height:435px;padding:20px 0 10px;border-top:1px solid #000}
+
+/* 조직도 그룹 리스트 */
+.LUX_basic_treeview_wrap{position:relative;margin-top:10px;padding-left:290px}
+.LUX_basic_treeview_wrap .group_chart{position:absolute;top:0;left:0;width:280px}
+.LUX_basic_treeview_wrap .tbl_scrall{height:490px}
+.LUX_basic_treeview_wrap .chart_tit{position:relative;padding:0 0 10px}
+.LUX_basic_treeview_wrap .chart_tit h2{font-weight:400;font-size:18px;color:#000}
+.LUX_basic_treeview_wrap .chart_tit p{font-weight:200;font-size:18px;color:#000}
+.LUX_basic_treeview_wrap .chart_tit .btnbx{position:absolute;top:-3px;right:0}
+.LUX_basic_treeview_wrap .chart_lst{height:527px;border:1px solid #ccc}
+
+/* LUX_basic_badge */
+.LUX_basic_badge{display:inline-block;font-weight:200;color:#fff;text-align:center;vertical-align:top;white-space:nowrap}
+.LUX_basic_badge.red{background:#fc5356}
+.LUX_basic_badge.blue{background:#1c90fb}
+.LUX_basic_badge.small{min-width:12px;padding:2px 3px 1px;border-radius:7px;font-size:9px}
+.LUX_basic_badge.big{min-width:26px;padding:3px 4px 1px;border-radius:12px;font-size:13px}
+
+.LUX_basic_badgebx{position:relative}
+.LUX_basic_badgebx .LUX_basic_badge{position:absolute;top:0;right:100%}
+.LUX_basic_badgebx .LUX_basic_badge.small{margin:-7px -10px 0 0}
+.LUX_basic_badgebx .LUX_basic_badge.big{margin:-12px -15px 0 0}
+
+/* LUX_basic_actionbar */
+.LUX_basic_actionbar{min-width:774px;padding:10px 0;background:#50596c}
+.LUX_basic_actionbar .actionbar_info{display:block;float:left;min-width:230px;padding:8px 30px 0 10px;white-space:nowrap}
+.LUX_basic_actionbar .actionbar_info .selinfo{font-size:18px;color:#fff}
+.LUX_basic_actionbar .actionbar_info .bar{display:inline-block;width:1px;height:18px;margin:0 10px;background:#fff;vertical-align:top}
+.LUX_basic_actionbar .actionbar_info .cominfo{font-size:18px;color:#1ae0ed}
+.LUX_basic_actionbar .actionbar_btn{float:right;padding:0 10px 0 0;text-align:right}
+.LUX_basic_actionbar:after{display:block;clear:both;content:''}
+.LUX_basic_actionbar .actionbar_btnlst{margin-top:-5px}
+.LUX_basic_actionbar .actionbar_btnlst:after{display:block;clear:both;content:''}
+.LUX_basic_actionbar .actionbar_btnlst > li{float:left;margin:5px 0 0 5px}
+
+.LUX_basic_actionbar .LUX_basic_btn .sp_lux{width:11px;height:7px;margin:15px -10px 0 10px;background-position:0 -225px}
+.LUX_basic_actionbar .LUX_basic_btn.basic2:hover{border:1px solid #0d5598;background:#0d5598;color:#fff}
+.LUX_basic_actionbar .LUX_basic_btn.basic3:hover{border:1px solid #3b4455;background:#3b4455;color:#dedede}
+.LUX_basic_actionbar .LUX_basic_btn:hover .sp_lux{background-position:-25px -225px}
+.LUX_basic_actionbar .btn_menulst .btn_menu .txt{display:none}
+
+.LUX_basic_actionbar .actionbar_persist{float:right}
+.LUX_basic_actionbar .actionbar_persist .btn_menu{width:37px;height:37px;border:1px solid #5c6986;background:#5c6986}
+.LUX_basic_actionbar .actionbar_persist .btn_menu .sp_lux{width:4px;height:15px;margin:5px 0;background-position:-75px -225px}
+.LUX_basic_actionbar .actionbar_persist .btn_menu:hover{border-color:#3b4455;background:#3b4455}
+
+.LUX_basic_actionbar .actionbar_btnarea{float:right;margin-right:5px}
+.LUX_basic_actionbar .actionbar_btnarea .btn_allmenu{display:none;width:37px;height:37px;border:1px solid #5c6986;background:#5c6986}
+.LUX_basic_actionbar .actionbar_btnarea .btn_allmenu:hover{border-color:#3b4455;background:#3b4455}
+.LUX_basic_actionbar .actionbar_btnarea .btn_allmenu .sp_lux{width:4px;height:15px;margin:5px 0;background-position:-75px -225px}
+
+.btn_menulst{position:relative/* height:140px */}
+.btn_menulst .menubx{position:relative}
+.btn_menulst .menudepth{display:none;position:absolute;top:auto;right:0;left:auto;bottom:100%;z-index:20;width:auto;background:#fff;box-shadow:none}
+
+.btn_menulst .menudepth{display:none}
+.btn_menulst .menubx:hover + .menudepth{display:block}
+.btn_menulst .menudepth{display:block;min-width:136px;width:100%}
+.btn_menulst .menudepth_scrall{overflow:auto;border:1px solid #a3a3a3;background:#fff}
+.btn_menulst .menudepth_scrallin{zoom:1}
+
+.btn_menulst .menudepth_lst .LUX_basic_btn{width:100%;height:30px;border:0 none;background:#fff;font-size:14px;line-height:30px;color:#4a4a4a}
+.btn_menulst .menudepth_lst .LUX_basic_btn:hover{border:0 none;background:#f5f5f5;color:#4a4a4a}
+.btn_menulst .menudepth_lst li:first-child .LUX_basic_btn{border-top:0}
+
+.btn_menulst .menudepth{display:none}
+.btn_menulst:hover .menudepth{display:block}
+
+@media(min-width:0) and (max-width:1024px){
+.LUX_basic_actionbar .actionbar_btnarea{position:relative}
+.LUX_basic_actionbar .actionbar_btnarea .btn_allmenu{display:block}
+.LUX_basic_actionbar .actionbar_btnarea .actionbar_btnlst{display:none;position:absolute;right:0;bottom:100%;width:130px;border:1px solid #ccc}
+.LUX_basic_actionbar .actionbar_btnarea .actionbar_btnlst .LUX_basic_btn{width:100%;border:0 none;border-top:1px solid #ccc;background:#fff;color:#000}
+.LUX_basic_actionbar .actionbar_btnarea .actionbar_btnlst .LUX_basic_btn:hover{background:#f5f5f5}
+.LUX_basic_actionbar .actionbar_btnarea .actionbar_btnlst li:first-child .LUX_basic_btn{border-top:0}
+.LUX_basic_actionbar .actionbar_btnarea .menudepth_lst .LUX_basic_btn{width:100%;height:30px;border:0 none;background:#fff;font-size:14px;line-height:30px;color:#4a4a4a}
+.LUX_basic_actionbar .actionbar_btnarea .menudepth_lst .LUX_basic_btn:hover{background:#f5f5f5}
+.LUX_basic_actionbar .actionbar_btnarea:hover .actionbar_btnlst{display:block}
+.LUX_basic_actionbar .actionbar_btnarea.active .actionbar_btnlst{display:block}
+.LUX_basic_actionbar .actionbar_btnlst{margin-top:0}
+.LUX_basic_actionbar .actionbar_btnlst > li{float:none;margin:0}
+.LUX_basic_actionbar .btn_menulst .menudepth{right:100%;bottom:-1px;width:136px}
+.LUX_basic_actionbar .btn_menulst .menubx .sp_lux{position:absolute;top:50%;left:10px;width:7px;height:11px;margin:-5px 0 0;background-position:-50px -225px}
+.LUX_basic_actionbar .btn_menulst .btn_menu .txt{display:block;font-size:16px}
+.actionbar_btnarea .actionbar_btnlst{display:none}
+.actionbar_btnarea:hover + .actionbar_btnlst{display:block}
+.btn_menulst .menudepth{display:none}
+.btn_menulst:hover .menudepth{display:block}
+}

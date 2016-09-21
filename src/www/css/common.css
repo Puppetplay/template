@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+/*-----------------------------------------------------------------------------
+[client] Screen Stylesheet
+
+version:   1.0
+date:      08/18/16
+author:    pureye4u
+email:     pureye4u@duzon.com
+
+website:
+
+version history: 1.0 - Make css for template app
+-----------------------------------------------------------------------------*/
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,img,button,select{margin:0;padding:0}
+body{-webkit-text-size-adjust:none}
+body,input,textarea,select,button,table{font-family:'Nanum Square','돋움',Dotum,'굴림',Gulim,Helvetica,sans-serif}
+img,fieldset{vertical-align:top}
+a{color:#1a1a1a;outline:none}
+em,address{font-style:normal}
+ul,ol{list-style:none}
+input[type=password]{font-family:'나눔고딕',NanumGothic,'맑은 고딕','Malgun Gothic','돋움',Dotum,'굴림',Gulim,Helvetica,AppleGothic,sans-serif}
+
+/* Layout */
+.bdbxin{width:100%;height:100%}
+.header{position:absolute;top:0;right:0;left:0;z-index:20;height:60px;border-bottom:1px solid #ebebeb;background:#FFF}
+.lnb{overflow:hidden;position:fixed;top:0;left:0;bottom:0;z-index:80;width:100px;width:52px;background:#333948;word-break:break-all;-webkit-transition:width .25s;transition:width .25s}
+.lnbin{overflow:auto;position:absolute;top:0;right:0;left:0;bottom:0;z-index:10;width:220px;height:100%;word-break:break-all}
+.lnb:hover{width:220px}
+
+.snb{overflow:hidden;position:fixed;top:0;left:52px;bottom:0;z-index:60;width:15px;height:100%;border-right:1px solid #b4b4b4;background:#fff;word-break:break-all;-webkit-transition:width .25s;transition:width .25s}
+.snb .snbin{overflow:auto;position:absolute;top:0;right:0;left:0;bottom:0;width:200px;height:100%;word-break:break-all}
+.snbnext{position:absolute;top:0;right:0;left:52px;bottom:0;min-width:874px}
+.snb + .snbnext{left:68px}
+.snb.active{width:199px}
+.snb.active + .snbnext{left:252px;-webkit-transition:left .25s;transition:left .25s}
+
+.container{overflow:hidden;position:absolute;top:61px;right:0;left:0;bottom:0;z-index:10;*height:100%;zoom:1}
+.containerin{overflow:hidden;overflow-y:auto;width:100%;height:100%;zoom:1}
+.container .content{overflow:hidden;padding-bottom:70px}
+
+.actionbar{position:absolute;right:0;left:0;bottom:0;z-index:50}
+
+/* Navigation */
+
+/* * Local * */
+.lnb .bdbx{margin-top:5px}
+.lnb li{background-position:16px 20px;background-repeat:no-repeat}
+.lnb li a{display:block;position:relative;width:220px;height:18px;margin-left:0;padding:19px 0 19px 62px;font-size:14px;color:#FFF;letter-spacing:-.7px;text-decoration:none}
+
+/* * Sub * */
+.snb .subtit{overflow:hidden;height:61px}
+.snb .subtit h2{font-size:14px;font-weight:normal;line-height:62px;color:#4a4a4a;letter-spacing:-1px;text-align:center}
+.snb .subtit h2 strong{padding:0 10px;font-size:22px;font-weight:bold;vertical-align:middle}
+
+/* Header */
+.header h1 img{padding:20px}
