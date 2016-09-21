@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import { Provider, connect } from 'react-redux';
+import MenuStore from './MenuStore';
 import { SinglePage } from '../components/Layout';
 import SmartASubNavigation from '../components/Nav';
 import saCss from './css/sa.css';
 import BasicInfoCss from './css/menu.css';
-import Main from './components/Main'
-
+import Main from './components/Main';
+import Action from './Action';
 
 class Menu extends Component {
 
@@ -26,11 +28,32 @@ class Menu extends Component {
                             SmartA ONLINE 회계 &gt; 자동회계처리 &gt; <strong>기초정보등록</strong></div>
                         <h1>기초정보등록</h1>
                     </div>
-                    <Main/>
+                    <Main fetchTickets={this.props.fetchTickets}/>
                 </div>
             </SinglePage>
         );
     }
 }
 
-export default Menu;
+const mapStateToProps = (state) => ({
+    tickets: state.tickets,
+});
+
+const mapDispatchToProps = (dispatch) => ({
+        fetchTickets: () => dispatch(Action.fetchTickets())
+});
+
+const MenuContainer = connect(mapStateToProps, mapDispatchToProps)(Menu);
+
+class MainContainer extends Component {
+    // 메뉴의 컨트롤을 구현합니다.
+    render() {
+        return (
+            <Provider store={MenuStore}>
+                <MenuContainer fetchTickets={this.props.fetchTickets} />
+            </Provider>
+        );
+    }
+}
+
+export default MainContainer;

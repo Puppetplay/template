@@ -23,7 +23,6 @@ class SOGrid extends Component {
             endColumn: this.props.gridSetting.columns[0].name,
         }
         this.gridView.setSelection(selection);
-        this.gridView.scrollPage(-200);
     }
 
 
