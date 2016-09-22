@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import tickets from './tickets';
+import searchInfo from './searchInfo';
 
 const rootReducer = combineReducers({
-    tickets
+    searchInfo
 });
 
 export default rootReducer;

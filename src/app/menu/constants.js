@@ -1,4 +1,1 @@
-export default {
-    SELECT_SLIP: 'select slip',
-    CHANGE_SEARCH_STATE: 'change search state'
-};
+export const CHANGE_SEARCH_INFO = 'change search info';

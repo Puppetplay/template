@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Actions from '../Actions';
+import Actions from '../../Actions';
 
 class Search extends Component {
 
@@ -14,26 +14,29 @@ class Search extends Component {
 
     // 조회버튼 클릭
     searchButtonClick() {
-        this.props.fetchTickets();
+        this.props.selectSlip();
     }
 
     // 조회조건변경
-    searchStateChange(event) {
-        let searchState = event.target.value;
-        Actions.changeSearchInfo(searchState);
+    searchInfoChange(event) {
+        let searchInfo = event.target.value;
+        console.log('111');
+        console.log(this.props.searchInfo);
+        this.props.changeSearchInfo(searchInfo);
     }
 
     // 렌더링을 정의합니다.
     render() {
+        console.log(this.props.searchInfo);
         return (
             <div>
-                <input type="search" value={this.props.searchState}
-                       onChange={this.searchStateChange.bind(this)}/>
+                <input type="search" value={this.props.searchInfo}
+                       onChange={this.searchInfoChange.bind(this)}/>
                 <input type="button" value="조회" onClick={this.searchButtonClick.bind(this)}/>
             </div>
         );
     }
 }
 
-
 export default Search;
+

@@ -9,14 +9,7 @@ import { syncHistoryWithStore, routerReducer } from 'react-router-redux';
 
 import MainContainer from './menu/MainContainer'
 
-const store = configureStore();
-const appHistory = useRouterHistory(createHashHistory)({queryKey: false});
-const history = syncHistoryWithStore(appHistory, store);
-
 render(
-    <Router history={history}>
-        <Route path="/" component={MainContainer}></Route>
-    </Router>,
+    <MainContainer/>,
     document.getElementById('app')
 );
-

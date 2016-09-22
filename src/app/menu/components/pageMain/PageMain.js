@@ -22,7 +22,9 @@ class PageMain extends Component {
 
     // 조회
     onSearch(){
-        this.selectSlip();
+        let param = this.props.searchInfo;
+        param = '/' + param + "~" + param;
+        this.selectSlip(param);
     }
     // 렌더링을 정의합니다.
     render() {
@@ -30,9 +32,10 @@ class PageMain extends Component {
             <div>
                 <div>
                     <Search
-                        fetchTickets = {this.props.fetchTickets}
-                        searchState = {this.props.searchState}
-                        onSearch={this.onSearch.bind(this)}/>
+                        searchInfo = {this.props.searchInfo}
+                        changeSearchInfo = {this.props.changeSearchInfo}
+                        selectSlip = {this.onSearch.bind(this)}
+                        />
                 </div>
                 <div>
                     <SOGrid ref="topGrid" gridSetting={this.topGridSetting} />
@@ -42,8 +45,9 @@ class PageMain extends Component {
     }
 
     // 전표데이터 불러와서 바인딩하기
-    selectSlip() {
-        let promise = APIs.selectSlip('');
+    selectSlip(param) {
+        console.log(param);
+        let promise = APIs.selectSlip(param);
         promise
             .then((responseData) => {
                 this.gridTop.bindData(responseData);
@@ -53,6 +57,7 @@ class PageMain extends Component {
             });
     }
 }
+
 
 export default PageMain;
 
